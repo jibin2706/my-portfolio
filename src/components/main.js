@@ -20,7 +20,7 @@ export default class Main extends Component {
   render() {
     return (
       <>
-        <main>
+        <main id="main">
           <div id="first-name">
             <span>Jibin</span>
           </div>

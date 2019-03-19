@@ -1,12 +1,12 @@
-import React, { Component } from "react"
+import React from "react"
 
-export default class Project extends Component {
-  render() {
-    return (
-      <div className="card">
-        {/* code here */}
-        {/* on card hover show project details */}
-      </div>
-    )
-  }
+function Project({ title, description }) {
+  return (
+    <div className="card">
+      <div className="card-overlay">{description}</div>
+      <h3>{title}</h3>
+    </div>
+  )
 }
+
+export default Project

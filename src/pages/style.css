@@ -26,14 +26,14 @@ header a {
   cursor: pointer;
 }
 
-main {
-  position: relative;
-  height: 100vh;
+#main {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  position: relative;
+  height: 100vh;
   font-family: "Raleway", sans-serif;
   font-weight: 900;
-  font-size: 14vh;
+  font-size: 12vh;
 }
 
 #first-name {
@@ -66,14 +66,18 @@ main {
   font-size: 48px;
 }
 
+/* wrapper class */
+.wrapper {
+  max-width: 1000px;
+  margin: auto;
+}
+
+
+
 /* sidenav */
-#side-nav {
+/* #side-nav {
   background-color: #f1f1f1;
-  width: var(--sidebar-width);
-  position: sticky;
-  top: 0px;
-  left: 0px;
-  height: 100%;
+  flex-basis: 400px;
 }
 
 #side-nav .brand-name {
@@ -90,12 +94,14 @@ main {
   color: black;
 }
 
-#side-nav a:hover{
-  background: #FBBD60;
-}
+#side-nav a:hover {
+  background: #fbbd60;
+} */
 
-#about, #skills, #work, #contact {
-  margin-left: var(--sidebar-width);
+#about,
+#skills,
+#work,
+#contact {
   padding: 16px;
   margin-top: 32px;
 }
@@ -113,12 +119,15 @@ main {
   font-weight: 400;
   text-align: center;
   margin: 0 32px;
+  line-height: 1.7;
+  max-width: 800px;
+  margin: auto;
 }
 
-.container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
 }
 
 .container > div {
@@ -127,18 +136,66 @@ main {
   align-items: center;
 }
 
+/* work */
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin: 16px 0;
+  position: relative;
+}
 
+.card-overlay {
+  background-color: #37357a;
+  color: #f1f1f1;
+  font-weight: 700;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.card:hover .card-overlay {
+  opacity: 1;
+  transition: all 0.2s ease-in;
+}
 
+.card {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
 
-
+.card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
 
 /* contact */
 .email-button {
   display: block;
-  border: none;
-  padding: 10px 18px;
+  font-weight: 900;
+  font-size: 18px;
+  color: #f1f1f1;
+  background-color: #fbbd60;
+  border: 3px solid var(--primary);
+  box-sizing: border-box;
+  border-radius: 11px;
+  width: 200px;
+  height: 55px;
   cursor: pointer;
   margin: 16px auto;
 }

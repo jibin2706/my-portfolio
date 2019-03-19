@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import TitleHeading from "./TitleHeading"
 import List from "./List"
-import SideNav from "./sideNav"
+import Project from "./project"
 
 export default class Container extends Component {
   constructor(props) {
@@ -14,9 +14,7 @@ export default class Container extends Component {
   }
   render() {
     return (
-      <div>
-        <SideNav />
-
+      <div className="wrapper">
         <section id="about">
           <TitleHeading title="About" />
           <p className="info">
@@ -53,7 +51,12 @@ export default class Container extends Component {
 
         <section id="work">
           <TitleHeading title="Work" />
-          <div>{/* project card component */}</div>
+          <div className="project-container">
+            <Project title="Park Finder" description="blah blah" />
+            <Project title="" description="" />
+            <Project title="" description="" />
+            <Project title="" description="" />
+          </div>
         </section>
 
         <section id="contact">
@@ -62,7 +65,7 @@ export default class Container extends Component {
             <p className="info">
               Feel free to reach out if you have any queries. Also available for
               freelance work.
-              <button className="email-button">Email</button>
+              <button className="email-button">Email Me</button>
             </p>
           </div>
         </section>
