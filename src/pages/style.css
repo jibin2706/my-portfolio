@@ -12,6 +12,7 @@ html {
 
 body {
   font-family: "Raleway", sans-serif;
+  font-weight: 400;
   color: black;
 }
 
@@ -23,6 +24,7 @@ header {
 }
 
 header a {
+  font-family: 'Raleway', sans-serif;
   color: #9f9f9f;
   padding: 0 16px;
   font-weight: 600;
@@ -242,6 +244,10 @@ header a {
 
   .main-info h3 {
     font-size: 32px;
+  }
+
+  .main-info {
+    bottom: 20%;
   }
 
   header a {
