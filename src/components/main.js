@@ -17,6 +17,18 @@ export default class Main extends Component {
     }, 2000)
   }
 
+  componentWillUpdate() {
+    const info = document.querySelector(".main-info")
+    info.classList.add("aClass")
+  }
+
+  componentDidUpdate() {
+    const info = document.querySelector(".main-info")
+    setTimeout(function() {
+      info.classList.remove("aClass")
+    }, 1000)
+  }
+
   render() {
     return (
       <>
