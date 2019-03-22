@@ -24,15 +24,15 @@ export default class Container extends Component {
           <TitleHeading title="About" />
           <p className="info">
             I'm obsessed with making things and even more obsessed with making
-            things better. After graduating from the University of Mumbai, I've
-            been actively involved in web design and android app development.
-            I've designed websites for colleges, nonprofits and more. I also
-            have a projects blog with all the information of the projects i was
-            involved in. My specialty is front-end web design and development,
-            making pixel magic in XD and turning it into beautiful, semantic
-            HTML & CSS. My interests, however, extend beyond the web and i love
-            developing android applications. When I'm not designing, I'm
-            probably
+            things better. Currently graduating from the University of Mumbai in
+            a Bachelor of Science in Information Technology, I've been actively
+            involved in web design and android app development. I have started
+            to casually blog topics related to programming. My specialty is in
+            front-end web design and development, making pixel magic in Figma
+            and turning it into beautiful, semantic HTML & CSS. My interests,
+            however, extend beyond the web and I love developing android
+            applications. When I'm not coding, I'm probably playing cricket,
+            chess or reading some books.
           </p>
         </section>
 
