@@ -69,10 +69,7 @@ export default class Container extends Component {
             <Project
               title="Random Quote Generator"
               description="Generate random quotes made using React"
-            />
-            <Project
-              title="Student Result Management System"
-              description="System for managing results. Technology: HTML5, CSS, PHP"
+              url="https://random-quote-generator-1.netlify.com/"
             />
           </div>
         </section>

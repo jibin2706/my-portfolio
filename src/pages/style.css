@@ -7,6 +7,13 @@
   --accent: #c38425;
 }
 
+.pointer {
+  cursor: pointer;
+}
+.normal-pointer {
+  cursor: default;
+}
+
 html {
   scroll-behavior: smooth;
 }
