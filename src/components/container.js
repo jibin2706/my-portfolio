@@ -56,22 +56,7 @@ export default class Container extends Component {
 
         <section id="work">
           <TitleHeading title="Work" />
-          <div className="project-container">
-            <Project
-              title="Park Finder"
-              description="IoT project to get find parking location on your android phone and an easy to use api to access parking location's info."
-            />
-            <Project
-              title="Backslash Fest Website"
-              description="Website for IT fest of Wilson College. Technology: HTML5, CSS, jQuery"
-              url="https://backslashfest.org"
-            />
-            <Project
-              title="Random Quote Generator"
-              description="Generate random quotes made using React"
-              url="https://random-quote-generator-1.netlify.com/"
-            />
-          </div>
+          <Project />
         </section>
 
         <section id="contact">
