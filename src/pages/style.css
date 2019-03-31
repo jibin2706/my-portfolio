@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,700,900");
-@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Muli");
 
 :root {
   --primary: #f99f18;
@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Muli", sans-serif;
   font-weight: 400;
   color: black;
   background: var(--secondary);
@@ -140,13 +140,12 @@ header a {
 }
 
 .info {
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
   text-align: center;
   margin: 0 32px;
-  line-height: 1.7;
+  line-height: 1.6;
   max-width: 800px;
   margin: auto;
+  font-size: 20px;
 }
 
 .container {
@@ -157,6 +156,16 @@ header a {
 .container > div {
   display: flex;
   flex-direction: column;
+}
+
+/* skills */
+#skills h3 {
+  font-family: "Raleway", sans-serif;
+}
+
+.item {
+  font-family: "Muli", sans-serif;
+  font-size: 20px;
 }
 
 /* work */
@@ -171,6 +180,11 @@ header a {
   justify-content: center;
   align-items: center;
   width: 100%;
+  font-family: "Muli", sans-serif;
+}
+
+.card-container h2 {
+  font-family: "Raleway", sans-serif;
 }
 
 .card {
@@ -182,6 +196,15 @@ header a {
   transform: translate(80px, 0px);
 }
 
+.card a {
+  color: white;
+  border-radius: 8px;
+  display: block;
+  background: #1f1f1f;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+}
 .card p {
   margin-right: 32px;
 }
@@ -250,18 +273,21 @@ header a {
 
 /* footer */
 footer {
-  font-family: "Lato", sans-serif;
+  font-family: "Muli", sans-serif;
   font-size: 16px;
   text-align: center;
   background: #1f1f1f;
-  margin: 0;
-  padding: 0 0 32px 0;
 }
 
 .social a {
   text-decoration: none;
   margin: 0 16px;
   color: var(--primary);
+}
+
+.social,
+.footer-info {
+  padding: 16px 0;
 }
 
 .footer-info p {

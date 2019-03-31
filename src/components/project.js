@@ -15,7 +15,9 @@ function Project() {
               Website for IT fest of Wilson College. Technology: HTML5, CSS,
               jQuery
             </p>
-            <a href="https://backslashfest.org">Visit Project</a>
+            <a className="card-link" href="https://backslashfest.org">
+              Visit Project
+            </a>
           </div>
           <img src={backslash} alt="backslash website" />
         </div>
@@ -33,7 +35,10 @@ function Project() {
           <div className="card">
             <h2>Random Quote Generator</h2>
             <p>Generate random quotes made using React</p>
-            <a href="https://random-quote-generator-1.netlify.com/">
+            <a
+              className="card-link"
+              href="https://random-quote-generator-1.netlify.com/"
+            >
               Visit Project
             </a>
           </div>
