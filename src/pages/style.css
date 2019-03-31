@@ -240,17 +240,16 @@ header a {
 
 /* contact */
 .email-button {
-  display: block;
+  display: inline-block;
   font-weight: 900;
-  font-size: 18px;
   color: #f1f1f1;
   background-color: #fbbd60;
-  border: 3px solid var(--primary);
+  border: 2px solid var(--primary);
   box-sizing: border-box;
-  border-radius: 11px;
-  width: 200px;
-  height: 55px;
+  border-radius: 8px;
   cursor: pointer;
+  text-decoration: none;
+  padding: 8px;
   margin: 16px auto;
   outline: none;
 }

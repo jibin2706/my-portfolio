@@ -65,42 +65,47 @@ export default class Container extends Component {
             <p className="info">
               Feel free to reach out if you have any queries. I will try to
               reach out as soon as possible. Also available for freelance work.
-              <button className="email-button">Email Me</button>
-              <div className="social">
-                <a
-                  href="https://github.com/jibin2706"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img className="social-icon" src={github} alt="github" />
-                </a>
-                <a
-                  href="https://twitter.com/real_jibin"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img className="social-icon" src={twitter} alt="twitter" />
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/jibin-thomas-4b3496142/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img className="social-icon" src={linkedin} alt="linkedin" />
-                </a>
-                <a
-                  href="https://www.instagram.com/jibin2706/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    className="social-icon"
-                    src={instagram}
-                    alt="instagram"
-                  />
-                </a>
-              </div>
             </p>
+            <div style={{ textAlign: "center" }}>
+              <a
+                href="mailto:jibin.thomas2706@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="email-button"
+              >
+                Email Me
+              </a>
+            </div>
+            <div className="social">
+              <a
+                href="https://github.com/jibin2706"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img className="social-icon" src={github} alt="github" />
+              </a>
+              <a
+                href="https://twitter.com/real_jibin"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img className="social-icon" src={twitter} alt="twitter" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/jibin-thomas-4b3496142/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img className="social-icon" src={linkedin} alt="linkedin" />
+              </a>
+              <a
+                href="https://www.instagram.com/jibin2706/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img className="social-icon" src={instagram} alt="instagram" />
+              </a>
+            </div>
           </div>
         </section>
       </div>
