@@ -140,6 +140,7 @@ header a {
 }
 
 .info {
+  font-family: "Muli", sans-serif;
   text-align: center;
   margin: 0 32px;
   line-height: 1.6;
