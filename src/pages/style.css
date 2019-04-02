@@ -212,12 +212,12 @@ header a {
 
 .card-container img {
   max-height: 400px;
-  max-width: 100%;
+  max-width: 600px;
   margin: 0;
   padding: 0;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 850px) {
   .card-container {
     flex-direction: column;
   }
@@ -239,6 +239,12 @@ header a {
   }
 }
 
+@media only screen and (max-width: 375px) {
+  .card {
+    min-height: 300px;
+    transform: translate(0px, 60px);
+  }
+}
 /* contact */
 .email-button {
   display: inline-block;
