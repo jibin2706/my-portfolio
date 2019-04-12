@@ -12,8 +12,8 @@ function Project() {
           <div className="card">
             <h2>Backslash Fest Website</h2>
             <p>
-              Website for IT fest of Wilson College. Technology: HTML5, CSS,
-              jQuery
+              Created a website for IT fest of Wilson College. Technology:
+              HTML5, CSS, jQuery
             </p>
             <a className="card-link" href="https://backslashfest.org">
               Visit Project

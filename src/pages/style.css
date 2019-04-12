@@ -29,18 +29,41 @@ body {
 
 header {
   position: absolute;
-  right: 16px;
-  top: 16px;
+  right: 4%;
+  top: 4%;
   z-index: 1;
 }
 
 header a {
   font-family: "Raleway", sans-serif;
-  color: #9f9f9f;
-  padding: 0 16px;
+  color: #222;
   font-weight: 600;
   text-decoration: none;
   cursor: pointer;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary);
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+}
+
+a:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+header a:not(:last-child) {
+  margin-right: 30px;
 }
 
 #main {
@@ -85,6 +108,12 @@ header a {
   text-align: center;
   color: var(--accent);
   opacity: 67%;
+}
+
+@media only screen and (max-height: 500px) {
+  .main-info {
+    bottom: 15%;
+  }
 }
 
 .main-info h3 {
@@ -340,7 +369,7 @@ footer {
   }
 
   header a {
-    color: #f1f1f1;
+    color: #222;
   }
 
   .container {
