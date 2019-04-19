@@ -2,9 +2,9 @@
 @import url("https://fonts.googleapis.com/css?family=Muli");
 
 :root {
-  --primary: #f99f18;
+  --primary: #ff9800;
   --secondary: #f1f1f1;
-  --accent: #c38425;
+  --accent: #c47a0b;
 }
 
 .pointer {
@@ -36,7 +36,7 @@ header {
 
 header a {
   font-family: "Raleway", sans-serif;
-  color: #222;
+  color: #9b5f06;
   font-weight: 600;
   text-decoration: none;
   cursor: pointer;
@@ -44,7 +44,7 @@ header a {
   padding-bottom: 4px;
 }
 
-a:before {
+header a:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -57,7 +57,7 @@ a:before {
   transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
 }
 
-a:hover:before {
+header a:hover:before {
   visibility: visible;
   transform: scaleX(1);
 }
@@ -369,7 +369,7 @@ footer {
   }
 
   header a {
-    color: #222;
+    color: rgb(68, 61, 61);
   }
 
   .container {
