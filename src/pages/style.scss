@@ -1,11 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,700,900");
 @import url("https://fonts.googleapis.com/css?family=Muli");
 
-:root {
-  --primary: #ff9800;
-  --secondary: #f1f1f1;
-  --accent: #c47a0b;
-}
+$primary: #ff9800;
+$secondary: #f1f1f1;
+$accent: #c47a0b;
 
 .pointer {
   cursor: pointer;
@@ -24,7 +22,7 @@ body {
   font-family: "Muli", sans-serif;
   font-weight: 400;
   color: black;
-  background: var(--secondary);
+  background: $secondary;
 }
 
 header {
@@ -51,7 +49,7 @@ header a:before {
   height: 3px;
   bottom: 0;
   left: 0;
-  background-color: var(--primary);
+  background-color: $primary;
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
@@ -76,8 +74,8 @@ header a:not(:last-child) {
 }
 
 #first-name {
-  color: var(--secondary);
-  background-color: var(--primary);
+  color: $secondary;
+  background-color: $primary;
   flex-basis: 50%;
   height: 100vh;
   display: flex;
@@ -90,8 +88,8 @@ header a:not(:last-child) {
 
 #last-name {
   height: 100vh;
-  color: var(--primary);
-  background-color: var(--secondary);
+  color: $primary;
+  background-color: $secondary;
   flex-basis: 50%;
   display: flex;
   justify-content: flex-start;
@@ -106,7 +104,7 @@ header a:not(:last-child) {
   bottom: 30%;
   width: 100%;
   text-align: center;
-  color: var(--accent);
+  color: $accent;
   opacity: 67%;
 }
 
@@ -128,30 +126,6 @@ header a:not(:last-child) {
   margin: auto;
 }
 
-/* sidenav */
-/* #side-nav {
-  background-color: #f1f1f1;
-  flex-basis: 400px;
-}
-
-#side-nav .brand-name {
-  display: block;
-  text-align: center;
-  padding: 16px;
-}
-
-#side-nav a {
-  display: block;
-  text-align: center;
-  padding: 16px;
-  text-decoration: none;
-  color: black;
-}
-
-#side-nav a:hover {
-  background: #fbbd60;
-} */
-
 #about,
 #skills,
 #work,
@@ -161,7 +135,7 @@ header a:not(:last-child) {
 }
 
 .title-heading {
-  color: var(--primary);
+  color: $primary;
   font-family: "Raleway", sans-serif;
   font-size: 48px;
   text-align: center;
@@ -280,7 +254,7 @@ header a:not(:last-child) {
   font-weight: 900;
   color: #f1f1f1;
   background-color: #fbbd60;
-  border: 2px solid var(--primary);
+  border: 2px solid $primary;
   box-sizing: border-box;
   border-radius: 8px;
   cursor: pointer;
@@ -317,7 +291,7 @@ footer {
 .social a {
   text-decoration: none;
   margin: 0 16px;
-  color: var(--primary);
+  color: $primary;
 }
 
 .social,

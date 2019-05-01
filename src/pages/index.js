@@ -2,10 +2,11 @@ import React from "react"
 
 import Main from "../components/main"
 import Container from "../components/container"
-import "./style.css"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+
+import "./style.scss"
+import "../components/layout.css"
 
 const IndexPage = () => (
   <Layout>
