@@ -3,11 +3,6 @@ import TitleHeading from "./TitleHeading"
 import List from "./List"
 import Project from "./project"
 
-import twitter from "../images/twitter.svg"
-import github from "../images/github.svg"
-import linkedin from "../images/linkedin.svg"
-import instagram from "../images/instagram.svg"
-
 export default class Container extends Component {
   constructor(props) {
     super(props)
@@ -74,36 +69,6 @@ export default class Container extends Component {
                 className="email-button"
               >
                 Email Me
-              </a>
-            </div>
-            <div className="social">
-              <a
-                href="https://github.com/jibin2706"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img className="social-icon" src={github} alt="github" />
-              </a>
-              <a
-                href="https://twitter.com/real_jibin"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img className="social-icon" src={twitter} alt="twitter" />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/jibin-thomas-4b3496142/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img className="social-icon" src={linkedin} alt="linkedin" />
-              </a>
-              <a
-                href="https://www.instagram.com/jibin2706/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img className="social-icon" src={instagram} alt="instagram" />
               </a>
             </div>
           </div>
