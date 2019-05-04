@@ -2,17 +2,17 @@ import Typography from "typography"
 
 const typography = new Typography({
   baseFontSize: "18px",
-  headerFontFamily: ["Raleway"],
+  headerFontFamily: ["Montserrat"],
   headerWeight: 900,
   bodyFontFamily: ["PT Serif"],
   googleFonts: [
     {
-      name: "Raleway",
-      styles: ["400", "900"],
+      name: "PT Serif",
+      styles: ["400"],
     },
     {
-      name: "PT Serif",
-      styles: ["400", "700"],
+      name: "Montserrat",
+      styles: ["700", "900"],
     },
   ],
 })
