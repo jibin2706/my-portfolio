@@ -4,14 +4,12 @@ import List from "./List"
 import Project from "./project"
 
 export default class Container extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      languages: ["Javascript", "Python", "Java"],
-      tools: ["Git", "VSCode", "Figma", "Adobe XD"],
-      frontEnd: ["React", "jQuery", "Bootstrap"],
-    }
+  state = {
+    languages: ["Javascript", "Python", "Java"],
+    tools: ["Git", "VSCode", "Figma", "Adobe XD"],
+    frontEnd: ["React", "jQuery", "Bootstrap"],
   }
+
   render() {
     return (
       <div className="wrapper">
