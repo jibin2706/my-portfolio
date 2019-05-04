@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     description: `Personal website of Jibin Thomas.`,
+    title: "Jibin Thomas",
     author: `@gatsbyjs`,
   },
   plugins: [
