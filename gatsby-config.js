@@ -1,6 +1,5 @@
 module.exports = {
   siteMetadata: {
-    title: `Jibin Thomas`,
     description: `Personal website of Jibin Thomas.`,
     author: `@gatsbyjs`,
   },
@@ -34,6 +33,12 @@ module.exports = {
         trackingId: "UA-133322442-3",
         // Puts tracking script in the head instead of the body
         head: true,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

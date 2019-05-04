@@ -6,11 +6,13 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import "./style.scss"
-import "../components/layout.css"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO
+      title="Jibin Thomas"
+      keywords={[`Jibin Thomas`, `Portfolio`, `Front-End Web Developer`]}
+    />
     <Main />
     <Container />
   </Layout>
