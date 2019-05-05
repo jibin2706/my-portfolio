@@ -3,7 +3,7 @@ import Typography from "typography"
 const typography = new Typography({
   baseFontSize: "18px",
   headerFontFamily: ["Montserrat"],
-  headerWeight: 900,
+  headerWeight: 700,
   bodyFontFamily: ["PT Serif"],
   googleFonts: [
     {
@@ -12,7 +12,7 @@ const typography = new Typography({
     },
     {
       name: "Montserrat",
-      styles: ["700", "900"],
+      styles: ["500", "700"],
     },
   ],
 })
