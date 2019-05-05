@@ -17,9 +17,10 @@ footer {
   .footer-info {
     p {
       font-family: "Montserrat", sans-serif;
+      font-weight: 700;
       font-size: 14px;
       margin: 8px;
-      color: #1f1f1f;
+      color: lighten($color: #222222, $amount: 20);
     }
   }
 }

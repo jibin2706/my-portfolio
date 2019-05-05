@@ -11,10 +11,10 @@ export default class Main extends Component {
       <>
         <main id="main">
           <div id="first-name">
-            <h2 style={{ display: "inline", fontSize: "80px" }}>Jibin</h2>
+            <h2 className="name">JIBIN</h2>
           </div>
           <div id="last-name">
-            <h2 style={{ display: "inline", fontSize: "80px" }}>Thomas</h2>
+            <h2 className="name">THOMAS</h2>
           </div>
         </main>
         <div className="scroller-container">
