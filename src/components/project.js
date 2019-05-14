@@ -29,7 +29,12 @@ function Project() {
               an easy to use api to access parking location's info.
             </p>
           </div>
-          <img src={phone} alt="park finder" style={{ zIndex: 1 }} />
+          <img
+            src={phone}
+            alt="park finder"
+            style={{ zIndex: 1 }}
+            className="vertical-image"
+          />
         </div>
         <div className="card-container">
           <div className="card">

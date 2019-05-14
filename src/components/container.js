@@ -6,7 +6,7 @@ import Project from "./project"
 export default class Container extends Component {
   state = {
     languages: ["Javascript", "Python", "Java"],
-    tools: ["Git", "VSCode", "Figma", "Adobe XD"],
+    tools: ["Git", "VSCode", "Figma"],
     frontEnd: ["React", "jQuery", "Bootstrap"],
   }
 

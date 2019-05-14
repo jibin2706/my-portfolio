@@ -3,7 +3,7 @@ import Scroller from "./Scroller"
 
 export default class Main extends Component {
   state = {
-    role: ["Web Developer", "Blogger", "Designer", "Android Developer"],
+    role: ["Web Developer", "Blogger", "Designer"],
   }
 
   render() {

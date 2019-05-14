@@ -2,13 +2,6 @@ $primary: #ff9800;
 $secondary: #f1f1f1;
 $accent: #c47a0b;
 
-.pointer {
-  cursor: pointer;
-}
-.normal-pointer {
-  cursor: default;
-}
-
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -33,28 +26,23 @@ header {
     color: #9b5f06;
     text-decoration: none;
     position: relative;
-    padding-bottom: 4px;
+    padding: 4px 8px;
+    margin: 0 8px;
 
     &:before {
       content: "";
       position: absolute;
       width: 100%;
-      height: 3px;
-      bottom: 0;
+      height: 0px;
+      bottom: 0px;
       left: 0;
       background-color: $primary;
-      visibility: hidden;
-      transform: scaleX(0);
-      transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+      transition: all 0.3s linear 0s;
+      opacity: 0.5;
     }
 
     &:hover:before {
-      visibility: visible;
-      transform: scaleX(1);
-    }
-
-    &:not(:last-child) {
-      margin-right: 30px;
+      height: 100%;
     }
   }
 }
@@ -79,7 +67,7 @@ header {
   justify-content: flex-end;
   align-items: center;
   h2 {
-    transform: translate(1px, 0px);
+    transform: translate(5px, 0px);
     margin: 0;
   }
 }
@@ -93,7 +81,7 @@ header {
   justify-content: flex-start;
   align-items: center;
   h2 {
-    transform: translate(-7px, -2px);
+    transform: translate(-1px, -1px);
     margin: 0;
   }
 }
@@ -107,12 +95,6 @@ header {
   opacity: 67%;
   h3 {
     font-size: 32px;
-  }
-}
-
-@media only screen and (max-height: 500px) {
-  .scroller-container {
-    bottom: 15%;
   }
 }
 
@@ -175,6 +157,9 @@ header {
   background: white;
   box-shadow: 5px 4px 15px rgba(0, 0, 0, 0.1);
   transform: translate(80px, 0px);
+  p {
+    margin-right: 32px;
+  }
 }
 
 .project-link {
@@ -189,13 +174,10 @@ header {
   text-align: center;
   text-decoration: none;
 }
-.card p {
-  margin-right: 32px;
-}
 
 .card-container img {
   max-height: 400px;
-  max-width: 600px;
+  max-width: 500px;
   margin: 0;
   padding: 0;
 }
@@ -212,7 +194,7 @@ header {
 
   .card-container img {
     z-index: 1;
-    max-width: 100%;
+    max-width: 500px;
     display: block;
     height: auto;
   }
@@ -222,16 +204,40 @@ header {
   }
 }
 
-@media only screen and (max-width: 420px) {
-  html {
-    font-size: 16px;
-  }
-
+@media only screen and (max-width: 700px) {
   .card {
     min-height: 300px;
-    transform: translate(0px, 60px);
+    transform: translate(0, 80px);
   }
 }
+
+@media only screen and (max-height: 500px) {
+  .scroller-container {
+    bottom: 15%;
+  }
+  .card-container img {
+    z-index: 1;
+    max-width: 100%;
+    display: block;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .card-container img {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .card {
+    min-height: 300px;
+    transform: translate(0, 40px);
+  }
+  .vertical-image {
+    transform: translate(0px, -80px);
+  }
+}
+
 /* contact */
 .email-button {
   display: inline-block;
