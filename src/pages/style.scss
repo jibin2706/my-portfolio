@@ -2,6 +2,7 @@ $primary: #ff9800;
 $secondary: #f1f1f1;
 $accent: #c47a0b;
 
+// global
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -14,6 +15,27 @@ body {
   background: $secondary;
 }
 
+.button {
+  font-family: "Montserrat", sans-serif;
+  background: transparent;
+  color: $primary;
+  border: 3px solid $primary;
+  border-radius: 3px;
+  display: block;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  width: 8rem;
+  outline: none;
+  margin: auto;
+  text-decoration: none;
+}
+
+.button-full {
+  width: 100%;
+}
+
 // header
 header {
   position: absolute;
@@ -22,7 +44,8 @@ header {
   z-index: 1;
   a {
     font-family: "Montserrat", sans-serif;
-    font-weight: 700;
+    font-weight: 500;
+    font-size: 16px;
     color: #9b5f06;
     text-decoration: none;
     position: relative;
@@ -162,19 +185,6 @@ header {
   }
 }
 
-.project-link {
-  font-family: "Montserrat", sans-serif;
-  color: $primary;
-  border-radius: 3px;
-  display: block;
-  background: transparent;
-  border: 3px solid $primary;
-
-  padding: 8px;
-  text-align: center;
-  text-decoration: none;
-}
-
 .card-container img {
   max-height: 400px;
   max-width: 500px;
@@ -236,23 +246,6 @@ header {
   .vertical-image {
     transform: translate(0px, -80px);
   }
-}
-
-/* contact */
-.email-button {
-  display: inline-block;
-  color: $primary;
-  width: 8rem;
-  background-color: transparent;
-  border: 3px solid $primary;
-  box-sizing: border-box;
-  border-radius: 3px;
-  cursor: pointer;
-  text-decoration: none;
-  padding: 0.5rem 0;
-  margin: 0.5rem 1rem;
-  outline: none;
-  font-family: "Montserrat", sans-serif;
 }
 
 /* mobile */

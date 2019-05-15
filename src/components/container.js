@@ -64,7 +64,7 @@ export default class Container extends Component {
                 href="mailto:jibin.thomas2706@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="email-button"
+                className="button"
               >
                 Email Me
               </a>
