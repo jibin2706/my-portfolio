@@ -58,6 +58,15 @@ export default class Container extends Component {
             <p className="info">
               Feel free to reach out if you have any queries. I will try to
               reach out as soon as possible. Also available for freelance work.
+              <br />
+              Here's my{" "}
+              <a
+                className="link"
+                href="https://drive.google.com/file/d/1FFSLL4uIRzEh5KsJYGSq8e_6X3XL5BxL/view?usp=sharing"
+                type="application/pdf"
+              >
+                resume
+              </a>
             </p>
             <div style={{ textAlign: "center" }}>
               <a
