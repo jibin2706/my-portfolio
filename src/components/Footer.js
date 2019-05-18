@@ -12,16 +12,16 @@ function Footer() {
       <hr style={{ maxWidth: "800px", margin: "16px auto" }} />
       <div className="social">
         <a href="https://twitter.com/real_jibin">
-          <img src={twitter} alt="twitter" />
+          <img src={twitter} alt="follow me on twitter" />
         </a>
         <a href="https://github.com/jibin2706">
           <img src={github} alt="github" />
         </a>
         <a href="https://www.linkedin.com/in/jibin-thomas-4b3496142/">
           <img src={linkedin} alt="linkedin" />
-          <a href="https://www.instagram.com/jibin2706/">
-            <img src={instagram} alt="instagram" />
-          </a>
+        </a>
+        <a href="https://www.instagram.com/jibin2706/">
+          <img src={instagram} alt="instagram" />
         </a>
       </div>
       <div className="footer-info">

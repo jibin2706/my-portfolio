@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500,700,800|PT+Serif&display=swap");
+
 $primary: #ff9800;
 $secondary: #f1f1f1;
 $accent: #c47a0b;
@@ -13,6 +15,7 @@ html {
 body {
   color: #222222;
   background: $secondary;
+  font-family: "PT serif", Georgia, serif;
 }
 
 .button {
@@ -79,6 +82,8 @@ header {
 
   .name {
     font-size: 4rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
   }
 }
 
@@ -105,7 +110,7 @@ header {
   justify-content: flex-start;
   align-items: center;
   h2 {
-    transform: translate(-1px, -1px);
+    transform: translate(-1px, 0px);
     margin: 0;
   }
 }
@@ -118,7 +123,7 @@ header {
   color: $accent;
   opacity: 67%;
   h3 {
-    font-size: 32px;
+    font-size: 2rem;
   }
 }
 
@@ -138,7 +143,8 @@ header {
 
 .title-heading {
   color: $primary;
-  font-size: 36px;
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
 }
 
@@ -279,8 +285,8 @@ header {
     bottom: 10%;
   }
 
-  header a {
-    color: rgb(68, 61, 61);
+  header .link {
+    color: #444444;
   }
 
   .container {
