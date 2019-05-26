@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:500,700,800|PT+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700|PT+Serif&display=swap");
 
-$primary: #ff9800;
-$secondary: #f1f1f1;
-$accent: #c47a0b;
+$primary: #0b69a3;
+$secondary: #1f2933;
+$white: #e4e7eb;
 
 // global
 html {
@@ -10,42 +10,49 @@ html {
   overflow-x: hidden;
   font-size: 18px;
   font-display: swap;
+  line-height: 1.7;
 }
 
 body {
-  color: #222222;
-  background: $secondary;
+  color: $secondary;
+  background: $white;
   font-family: "PT serif", Georgia, serif;
 }
 
-.button {
+h1,
+h2,
+h3 {
   font-family: "Montserrat", sans-serif;
-  background: transparent;
-  color: $primary;
-  border: 3px solid $primary;
-  border-radius: 3px;
-  display: block;
-  padding: 8px;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-  width: 8rem;
-  outline: none;
-  margin: auto;
-  text-decoration: none;
 }
 
-.button-full {
-  width: 100%;
+a {
+  text-decoration: none;
 }
 
 .link {
+  color: $primary;
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  color: #9b5f06;
+}
+
+.button {
+  background: transparent;
+  border-radius: 3px;
+  border: 3px solid $primary;
+  color: $primary;
+  cursor: pointer;
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  margin: auto;
+  outline: none;
+  padding: 8px;
+  text-align: center;
   text-decoration: none;
+  width: 8rem;
+}
+
+.link {
   position: relative;
+  padding: 4px 8px;
   &:before {
     content: "";
     position: absolute;
@@ -54,7 +61,7 @@ body {
     bottom: 0px;
     left: 0;
     background-color: $primary;
-    transition: all 0.3s linear 0s;
+    transition: all 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0s;
     opacity: 0.5;
   }
   &:hover:before {
@@ -62,96 +69,29 @@ body {
   }
 }
 
-// header
-header {
-  position: absolute;
-  right: 4%;
-  top: 3%;
-  z-index: 1;
-  a {
-    padding: 4px 8px;
-    margin: 0 8px;
-  }
-}
-
-// main
-#main {
-  display: flex;
-  position: relative;
-  height: 100vh;
-
-  .name {
-    font-size: 4rem;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 800;
-  }
-}
-
-#first-name {
-  color: $secondary;
-  background-color: $primary;
-  flex-basis: 50%;
-  height: 100vh;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  h2 {
-    transform: translate(5px, 0px);
-    margin: 0;
-  }
-}
-
-#last-name {
-  height: 100vh;
-  color: $primary;
-  background-color: $secondary;
-  flex-basis: 50%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  h2 {
-    transform: translate(-1px, 0px);
-    margin: 0;
-  }
-}
-
-.scroller-container {
-  position: absolute;
-  bottom: 30%;
-  width: 100%;
-  text-align: center;
-  color: $accent;
-  opacity: 67%;
-  h3 {
-    font-size: 2rem;
-  }
-}
-
 /* wrapper class */
 .wrapper {
-  max-width: 1000px;
+  max-width: 900px;
   margin: auto;
+  padding: 1rem;
 }
 
 #about,
 #skills,
 #work,
 #contact {
-  padding: 16px;
-  margin-top: 32px;
+  margin-top: 4rem;
 }
 
 .title-heading {
   color: $primary;
   font-size: 2rem;
-  font-family: "Montserrat", sans-serif;
   text-align: center;
 }
 
 .info {
   text-align: center;
   margin: 8px auto;
-  line-height: 1.6;
   max-width: 800px;
 }
 
@@ -184,7 +124,8 @@ header {
   min-width: 300px;
   padding: 16px;
   background: white;
-  box-shadow: 5px 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 13px 2px rgba(0, 0, 0, 0.5);
+  border-top: 4px solid $primary;
   transform: translate(80px, 0px);
   p {
     margin-right: 32px;
@@ -228,9 +169,6 @@ header {
 }
 
 @media only screen and (max-height: 500px) {
-  .scroller-container {
-    bottom: 15%;
-  }
   .card-container img {
     z-index: 1;
     max-width: 100%;
@@ -256,39 +194,6 @@ header {
 
 /* mobile */
 @media only screen and (max-width: 800px) {
-  #main {
-    flex-direction: column;
-  }
-
-  #first-name {
-    align-items: flex-end;
-    justify-content: center;
-    h2 {
-      transform: translateY(14px);
-    }
-  }
-
-  #last-name {
-    align-items: flex-start;
-    justify-content: center;
-    h2 {
-      transform: translateY(-15px);
-      z-index: 1;
-    }
-  }
-
-  .scroller-container h3 {
-    color: $primary;
-  }
-
-  .scroller-container {
-    bottom: 10%;
-  }
-
-  header .link {
-    color: #444444;
-  }
-
   .container {
     display: flex;
     flex-direction: column;

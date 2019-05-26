@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import TitleHeading from "./TitleHeading"
+import Heading from "./Heading"
 import List from "./List"
 import Project from "./project"
 
@@ -14,7 +14,7 @@ export default class Container extends Component {
     return (
       <div className="wrapper">
         <section id="about">
-          <TitleHeading title="About" />
+          <Heading title="About" />
           <p className="info">
             I'm obsessed with making things and even more obsessed with making
             things better. Currently graduating from the University of Mumbai in
@@ -30,7 +30,7 @@ export default class Container extends Component {
         </section>
 
         <section id="skills">
-          <TitleHeading title="Skills" />
+          <Heading title="Skills" />
           <div className="container">
             <div>
               <h3>Languages</h3>
@@ -48,12 +48,12 @@ export default class Container extends Component {
         </section>
 
         <section id="work">
-          <TitleHeading title="Work" />
+          <Heading title="Work" />
           <Project />
         </section>
 
         <section id="contact">
-          <TitleHeading title="Contact" />
+          <Heading title="Contact" />
           <div>
             <p className="info">
               Feel free to reach out if you have any queries. I will try to

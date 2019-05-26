@@ -1,7 +1,7 @@
 import React from "react"
 
-import Main from "../components/main"
-import Container from "../components/container"
+import LandingScreen from "../components/LandingScreen"
+import Container from "../components/Container"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -13,7 +13,7 @@ const IndexPage = () => (
       title="Jibin Thomas"
       keywords={[`Jibin Thomas`, `Portfolio`, `Front-End Web Developer`]}
     />
-    <Main />
+    <LandingScreen />
     <Container />
   </Layout>
 )

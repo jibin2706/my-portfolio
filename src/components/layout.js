@@ -1,13 +1,13 @@
 import React from "react"
 import "./layout.css"
 
-import Header from "./header"
+import Navigation from "./Navigation"
 
 import Footer from "./footer"
 
 const Layout = ({ children }) => (
   <>
-    <Header />
+    <Navigation />
     {children}
     <Footer />
   </>

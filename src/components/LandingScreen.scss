@@ -1,0 +1,57 @@
+$primary: #0b69a3;
+$secondary: #1f2933;
+$white: #e4e7eb;
+
+main {
+  align-items: center;
+  background: $secondary;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  //   border-top: 9px solid $primary;
+}
+
+#name {
+  font-size: 4.5rem;
+  margin: 0;
+  .first-name {
+    color: $white;
+  }
+  .last-name {
+    color: $primary;
+  }
+}
+
+#role {
+  margin: 0;
+  font-size: 2rem;
+  color: $white;
+}
+
+@media only screen and (max-width: 700px) {
+  #name span {
+    display: block;
+  }
+  .first-name {
+    transform: translateY(14px);
+  }
+
+  .last-name {
+    transform: translateY(-17px);
+    z-index: 1;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  #name {
+    font-size: 4rem;
+  }
+
+  #role {
+    font-size: 1.7rem;
+  }
+}

@@ -1,16 +1,16 @@
 import React from "react"
 import Line from "./Line"
 
-function TitleHeading({ title }) {
+function Heading({ title }) {
   return (
     <div style={{ display: "flex", justifyContent: "center", margin: "16px" }}>
       <Line />
-      <h2 className="title-heading" style={{ display: "inline", margin: 0 }}>
+      <h3 className="title-heading" style={{ display: "inline", margin: 0 }}>
         {title}
-      </h2>
+      </h3>
       <Line />
     </div>
   )
 }
 
-export default TitleHeading
+export default Heading
