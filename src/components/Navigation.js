@@ -71,10 +71,10 @@ function Header() {
         <a href="#contact">Contact</a>
       </nav>
       <nav id="nav-desktop">
-        <a href="https://blog.jibin.tech">Blog</a>
-        <a href="#about">About Me</a>
-        <a href="#work">Portfolio</a>
-        <a href="#contact">Contact</a>
+        <a href="https://blog.jibin.tech">BLOG</a>
+        <a href="#about">ABOUT</a>
+        <a href="#work">PORTFOLIO</a>
+        <a href="#contact">CONTACT</a>
       </nav>
     </>
   )
