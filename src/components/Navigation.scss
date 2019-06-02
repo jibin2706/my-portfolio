@@ -5,8 +5,12 @@ $white: #e4e7eb;
 #nav-mobile,
 #nav-desktop {
   position: absolute;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
   z-index: 10;
+
+  a:hover {
+    color: $white;
+  }
 }
 
 #nav-mobile,

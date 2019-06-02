@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:700|PT+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:600,900|Open+Sans&display=swap");
 
 $primary: #0b69a3;
 $secondary: #1f2933;
@@ -16,7 +16,7 @@ html {
 body {
   color: $secondary;
   background: $white;
-  font-family: "PT serif", Georgia, serif;
+  font-family: "Open Sans", Georgia, serif;
 }
 
 h1,
@@ -31,7 +31,6 @@ a {
 
 .link {
   color: $primary;
-  font-family: "Montserrat", sans-serif;
 }
 
 .button {
