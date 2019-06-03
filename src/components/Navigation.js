@@ -9,9 +9,11 @@ function Header() {
 
     if (isNavbarVisible) {
       navbar.classList.add("tap")
+      document.documentElement.classList.add("hide-overflow")
       checkbox.checked = true
     } else {
       navbar.classList.remove("tap")
+      document.documentElement.classList.remove("hide-overflow")
       checkbox.checked = false
     }
   })
