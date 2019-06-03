@@ -1,7 +1,4 @@
-$primary: #0b69a3;
-$primary-accent: #0d82b4;
-$secondary: #1f2933;
-$white: #e4e7eb;
+@import "colors";
 
 main {
   align-items: center;
@@ -47,7 +44,7 @@ main {
   }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 440px) {
   #name {
     font-size: 4rem;
   }
