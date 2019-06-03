@@ -78,6 +78,7 @@
 }
 
 #hamburger {
+  cursor: pointer;
   position: absolute;
   z-index: 100;
   top: 0;
@@ -128,12 +129,12 @@
 }
 
 .checkbox1:checked + label > .hamburger > .bar2 {
-  transform: translateX(-40px);
+  transform: translateX(-25px);
   background-color: transparent;
 }
 
 .checkbox1:checked + label > .hamburger > .bar3 {
-  transform: translateX(40px);
+  transform: translateX(25px);
   background-color: transparent;
 }
 
