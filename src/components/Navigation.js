@@ -1,39 +1,57 @@
-import React, { useRef, useState, useEffect } from "react"
+import React, { useState, useEffect } from "react"
 import "./Navigation.scss"
 
 function Header() {
   const [isNavbarVisible, toggleNavbar] = useState(false)
   useEffect(() => {
     const navbar = document.getElementById("nav-mobile")
+    const checkbox = document.getElementById("checkbox1")
 
     if (isNavbarVisible) {
       navbar.classList.add("tap")
+      checkbox.checked = true
     } else {
       navbar.classList.remove("tap")
+      checkbox.checked = false
     }
   })
 
   return (
     <>
-      <input type="checkbox" id="checkbox1" class="checkbox1 visuallyHidden" />
+      <input
+        type="checkbox"
+        id="checkbox1"
+        className="checkbox1 visuallyHidden"
+      />
       <label
-        for="checkbox1"
+        htmlFor="checkbox1"
         id="hamburger"
         onClick={() => toggleNavbar(!isNavbarVisible)}
       >
-        <div class="hamburger">
-          <span class="bar bar1" />
-          <span class="bar bar2" />
-          <span class="bar bar3" />
-          <span class="bar bar4" />
+        <div className="hamburger">
+          <span className="bar bar1" />
+          <span className="bar bar2" />
+          <span className="bar bar3" />
+          <span className="bar bar4" />
         </div>
       </label>
 
       <nav id="nav-mobile">
-        <a href="https://blog.jibin.tech">BLOG</a>
-        <a href="#about">ABOUT</a>
-        <a href="#work">PORTFOLIO</a>
-        <a href="#contact">CONTACT</a>
+        <a
+          onClick={() => toggleNavbar(!isNavbarVisible)}
+          href="https://blog.jibin.tech"
+        >
+          BLOG
+        </a>
+        <a onClick={() => toggleNavbar(!isNavbarVisible)} href="#about">
+          ABOUT
+        </a>
+        <a onClick={() => toggleNavbar(!isNavbarVisible)} href="#work">
+          PORTFOLIO
+        </a>
+        <a onClick={() => toggleNavbar(!isNavbarVisible)} href="#contact">
+          CONTACT
+        </a>
       </nav>
       <nav id="nav-desktop">
         <a href="https://blog.jibin.tech">BLOG</a>
