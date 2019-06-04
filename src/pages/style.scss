@@ -3,6 +3,7 @@
 $primary: #0b69a3;
 $secondary: #1f2933;
 $white: #e4e7eb;
+$grey: #52606d;
 
 // global
 html {
@@ -27,6 +28,7 @@ h3 {
 
 a {
   text-decoration: none;
+  padding-bottom: 0.25em;
 }
 
 .hide-overflow {
@@ -53,25 +55,6 @@ a {
   width: 8rem;
 }
 
-.link {
-  position: relative;
-  padding: 4px 8px;
-  &:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 0px;
-    bottom: 0px;
-    left: 0;
-    background-color: $primary;
-    transition: all 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0s;
-    opacity: 0.5;
-  }
-  &:hover:before {
-    height: 100%;
-  }
-}
-
 /* wrapper class */
 .wrapper {
   max-width: 900px;
@@ -79,10 +62,7 @@ a {
   padding: 1rem;
 }
 
-#about,
-#skills,
-#work,
-#contact {
+.wrapper > section {
   margin-top: 4rem;
 }
 
@@ -93,14 +73,14 @@ a {
 }
 
 .info {
-  text-align: center;
+  text-align: left;
   margin: 8px auto;
   max-width: 800px;
 }
 
 .container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .container > div {
@@ -112,6 +92,32 @@ a {
 .project-container {
   display: flex;
   flex-wrap: wrap;
+}
+
+/* posts */
+.post {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+.date {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: normal;
+  color: $grey;
+  &::before {
+    content: " — ";
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .post {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+  }
+  .date::before {
+    display: none;
+  }
 }
 
 /* card */
@@ -196,7 +202,7 @@ a {
 }
 
 /* mobile */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 700px) {
   .container {
     display: flex;
     flex-direction: column;
