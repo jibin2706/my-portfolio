@@ -13,7 +13,7 @@ export default class Container extends Component {
   render() {
     return (
       <div className="wrapper">
-        <section id="about">
+        <section>
           <Heading title="About Me" />
           <div className="info">
             <p>
@@ -34,7 +34,7 @@ export default class Container extends Component {
           </div>
         </section>
 
-        <section id="skills">
+        <section>
           <Heading title="Skills" />
           <div className="container info">
             <div>
@@ -52,12 +52,12 @@ export default class Container extends Component {
           </div>
         </section>
 
-        <section id="work">
+        <section>
           <Heading title="Work" />
           <Project />
         </section>
 
-        <section id="skills">
+        <section>
           <Heading title="Latest Posts" />
           <div className="info">
             <div className="post">
@@ -82,7 +82,7 @@ export default class Container extends Component {
           </div>
         </section>
 
-        <section id="contact">
+        <section>
           <Heading title="Contact" />
           <div>
             <p className="info">
