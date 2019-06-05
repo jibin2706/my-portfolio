@@ -27,6 +27,8 @@ function Header() {
       />
       <label
         htmlFor="checkbox1"
+        aria-labelledby="checkbox1"
+        aria-label="toggle navigation"
         id="hamburger"
         onClick={() => toggleNavbar(!isNavbarVisible)}
       >
