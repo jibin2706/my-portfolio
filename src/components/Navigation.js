@@ -45,6 +45,13 @@ function Header() {
         >
           BLOG
         </a>
+        <a
+          onClick={() => toggleNavbar(!isNavbarVisible)}
+          href="https://drive.google.com/file/d/1FFSLL4uIRzEh5KsJYGSq8e_6X3XL5BxL/view?usp=sharing"
+          type="application/pdf"
+        >
+          RESUME
+        </a>
         <a onClick={() => toggleNavbar(!isNavbarVisible)} href="#about">
           ABOUT
         </a>
@@ -57,6 +64,12 @@ function Header() {
       </nav>
       <nav id="nav-desktop">
         <a href="https://blog.jibin.tech">BLOG</a>
+        <a
+          href="https://drive.google.com/file/d/1FFSLL4uIRzEh5KsJYGSq8e_6X3XL5BxL/view?usp=sharing"
+          type="application/pdf"
+        >
+          RESUME
+        </a>
         <a href="#about">ABOUT</a>
         <a href="#work">PORTFOLIO</a>
         <a href="#contact">CONTACT</a>
