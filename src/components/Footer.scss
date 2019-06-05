@@ -1,23 +1,21 @@
+@import "colors";
+
 footer {
   text-align: center;
+  font-family: "Open Sans";
+  color: $grey;
+}
 
-  .social {
-    img {
-      width: 24px;
-      margin: 0 16px 8px 16px;
-      transition: 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+.social a {
+  color: $primary;
+  margin: 0 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
 
-      &:hover {
-        transform: scale(1.7);
-        transition: 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
-      }
-    }
-  }
-
-  .footer-info {
-    p {
-      font-size: 0.8rem;
-      margin: 8px;
-    }
+.footer-info {
+  p {
+    font-size: 0.8rem;
+    margin: 8px;
   }
 }
