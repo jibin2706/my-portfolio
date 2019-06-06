@@ -60,7 +60,16 @@ export default class Container extends Component {
         <section>
           <Heading title="Latest Posts" />
           <div className="info">
-            <div className="post">
+            <p className="post">
+              <a
+                href="https://blog.jibin.tech/vs-code-extensions-to-make-you-more-productive/"
+                className="link"
+              >
+                Visual Studio Code extensions to make you more productive
+              </a>
+              <span className="date"> 5th June, 2019</span>
+            </p>
+            <p className="post">
               <a
                 href="https://blog.jibin.tech/integrating-payment-in-android-app/"
                 className="link"
@@ -68,7 +77,7 @@ export default class Container extends Component {
                 Integrating payment in your Android Application
               </a>
               <span className="date"> 17th May, 2019</span>
-            </div>
+            </p>
             <p className="post">
               <a
                 href="https://blog.jibin.tech/connecting-nodemcu-to-firebase/"
@@ -78,6 +87,12 @@ export default class Container extends Component {
                 database
               </a>
               <span className="date"> 25th April, 2019</span>
+            </p>
+            <p className="post">
+              Read more such posts{" "}
+              <a className="link" href="https://blog.jibin.tech">
+                here
+              </a>
             </p>
           </div>
         </section>
