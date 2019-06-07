@@ -13,7 +13,7 @@ export default class Container extends Component {
   render() {
     return (
       <div className="wrapper">
-        <section>
+        <section id="about">
           <Heading title="About Me" />
           <div className="info">
             <p>
@@ -52,7 +52,7 @@ export default class Container extends Component {
           </div>
         </section>
 
-        <section>
+        <section id="work">
           <Heading title="Work" />
           <Project />
         </section>
@@ -97,7 +97,7 @@ export default class Container extends Component {
           </div>
         </section>
 
-        <section>
+        <section id="contact">
           <Heading title="Contact" />
           <div>
             <p className="info">
