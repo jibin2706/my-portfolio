@@ -1,0 +1,21 @@
+@import "colors";
+
+.heading {
+  display: flex;
+  justify-content: center;
+  margin: 16px;
+}
+
+.heading__title {
+  display: inline;
+  margin: 0;
+  white-space: nowrap;
+  color: $primary;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.line {
+  margin: auto 16px;
+  flex-shrink: 0;
+}
