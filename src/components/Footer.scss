@@ -1,21 +1,26 @@
 @import "colors";
 
-footer {
-  text-align: center;
-  font-family: "Open Sans";
+.footer {
+  padding: 3rem 0;
   color: $grey;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
 }
 
-.social a {
-  color: $primary;
-  margin: 0 1rem;
-  text-transform: uppercase;
-  font-weight: bold;
+.footer__network {
+  z-index: 1000;
+  padding-bottom: 2rem;
 }
 
-.footer-info {
-  p {
-    font-size: 0.8rem;
-    margin: 8px;
-  }
+.footer__network a {
+  margin: 0.5rem;
+  text-transform: capitalize;
+}
+
+.footer__copyright {
+  margin: 8px;
+}
+
+.footer__end {
+  font-size: 0.8rem;
 }
