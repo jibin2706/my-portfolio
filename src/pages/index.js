@@ -9,10 +9,7 @@ import "./style.scss"
 
 const IndexPage = () => (
   <Layout>
-    <SEO
-      title="Jibin Thomas"
-      keywords={[`Jibin Thomas`, `Portfolio`, `Front-End Web Developer`]}
-    />
+    <SEO title="Jibin Thomas | Front-End Developer and Casual Blogger" />
     <LandingScreen />
     <Container />
   </Layout>
