@@ -89,9 +89,9 @@ export default class Container extends Component {
               <span className="date"> 25th April, 2019</span>
             </p>
             <p className="post">
-              Read more such posts{" "}
+              Read more such{" "}
               <a className="link" href="https://blog.jibin.tech">
-                here
+                posts here
               </a>
             </p>
           </div>

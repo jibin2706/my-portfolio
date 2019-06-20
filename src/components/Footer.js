@@ -9,9 +9,7 @@ function Footer() {
       <div className="social">
         <a href="https://twitter.com/real_jibin">Twitter</a>
         <a href="https://github.com/jibin2706">Github</a>
-        <a href="https://www.linkedin.com/in/jibin-thomas-4b3496142/">
-          Linkedin
-        </a>
+        <a href="https://www.linkedin.com/in/jibin2706/">Linkedin</a>
       </div>
       <div className="footer-info">
         <p>© - Coded by hand and headaches</p>
