@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:600,900|Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:900|Open+Sans:400,600&display=swap");
 @import "../components/colors";
 
 // global
@@ -25,14 +25,11 @@ h3 {
 a {
   text-decoration: none;
   padding-bottom: 0.25em;
+  color: $primary;
 }
 
 .hide-overflow {
   overflow: hidden;
-}
-
-.link {
-  color: $primary;
 }
 
 .button {
@@ -42,13 +39,20 @@ a {
   color: $primary;
   cursor: pointer;
   display: block;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
   margin: auto;
   outline: none;
   padding: 8px;
   text-align: center;
   text-decoration: none;
   width: 8rem;
+
+  &:hover {
+    color: $white;
+    background: $primary;
+    transition: all 0.1s linear;
+  }
 }
 
 /* wrapper class */
@@ -60,12 +64,6 @@ a {
 
 .wrapper > section {
   margin-top: 4rem;
-}
-
-.title-heading {
-  color: $primary;
-  font-size: 2rem;
-  text-align: center;
 }
 
 .info {
