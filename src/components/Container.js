@@ -33,7 +33,6 @@ export default class Container extends Component {
             </p>
           </div>
         </section>
-
         <section>
           <Heading title="Skills" />
           <div className="container info">
@@ -51,12 +50,10 @@ export default class Container extends Component {
             </div>
           </div>
         </section>
-
         <section id="work">
           <Heading title="Work" />
           <Project />
         </section>
-
         <section>
           <Heading title="Latest Posts" />
           <div className="info">
@@ -120,7 +117,7 @@ export default class Container extends Component {
                 href="mailto:jibin.thomas2706@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="button"
+                className="btn"
               >
                 Email Me
               </a>

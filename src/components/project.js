@@ -42,7 +42,7 @@ function Project() {
             <p>Generate random quotes made using React</p>
             <a
               className="link"
-              href="https://random-quote-generator-1.netlify.com/"
+              href="https://quote-gen.netlify.com/"
             >
               Visit Project
             </a>

@@ -13,7 +13,7 @@ function Footer() {
 
       <section>
         <p className="footer__copyright">Ⓒ - Coded by hand and headaches</p>
-        <p class="footer__end">
+        <p className="footer__end">
           This site is built with <a href="https://gatsbyjs.org/">Gatsby.js </a>
           . The source code is hosted on{" "}
           <a href="https://github.com/jibin2706/my-portfolio">Github</a>.
