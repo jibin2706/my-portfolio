@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react"
+import { Link } from "gatsby"
+
 import "./Navigation.scss"
 
 function Header() {
@@ -54,15 +56,12 @@ function Header() {
         >
           RESUME
         </a>
-        <a onClick={() => toggleNavbar(!isNavbarVisible)} href="#about">
-          ABOUT
-        </a>
-        <a onClick={() => toggleNavbar(!isNavbarVisible)} href="#work">
+        <Link onClick={() => toggleNavbar(!isNavbarVisible)} to="/#work">
           PORTFOLIO
-        </a>
-        <a onClick={() => toggleNavbar(!isNavbarVisible)} href="#contact">
+        </Link>
+        <Link onClick={() => toggleNavbar(!isNavbarVisible)} to="/#contact">
           CONTACT
-        </a>
+        </Link>
       </nav>
       <nav id="nav-desktop">
         <a href="https://blog.jibin.tech">BLOG</a>
@@ -72,9 +71,8 @@ function Header() {
         >
           RESUME
         </a>
-        <a href="#about">ABOUT</a>
-        <a href="#work">PORTFOLIO</a>
-        <a href="#contact">CONTACT</a>
+        <Link to="/#work">PORTFOLIO</Link>
+        <Link to="/#contact">CONTACT</Link>
       </nav>
     </>
   )
