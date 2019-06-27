@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import Typist from "react-typist"
 
 import "./LandingScreen.scss"
-import "./Typist.css"
+import "../styles/typist.css"
 
 export default class Main extends Component {
   state = {

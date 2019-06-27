@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import Heading from "./Heading"
 import List from "./List"
-import Project from "./project"
+import Project from "./Project"
 
 export default class Container extends Component {
   state = {
