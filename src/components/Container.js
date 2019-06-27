@@ -17,18 +17,17 @@ export default class Container extends Component {
           <Heading title="About Me" />
           <div className="info">
             <p>
-              I'm obsessed with making things and even more obsessed with making
-              things better. Currently graduating from the University of Mumbai
-              in a Bachelor of Science in Information Technology, I've been
-              actively involved in web design and android app development. I
-              have started to casually blog topics related to programming.
+              I'm a Frontend Web developer, graduated from Mumbai University in
+              a Bachelor of Science in Information Technology. I've been
+              actively involved in web design and android app development. And I
+              have recently started blogging related to programming.
             </p>
             <p>
               My specialty is in{" "}
-              <strong>front-end web design and development</strong> , making
-              pixel magic in Figma and turning it into beautiful, semantic HTML
-              & CSS. My interests, however, extend beyond the web and I love
-              developing android applications. When I'm not coding, I'm probably
+              <strong>front-end web design and development</strong>, making
+              designs in Figma and turning it into beautiful, semantic HTML &
+              CSS. However, my interests extend beyond the web and I try to play
+              about with new technologies. When I'm not coding, I'm probably
               playing cricket, chess or reading some books.
             </p>
           </div>
