@@ -1,40 +1,23 @@
-import React, { Component } from "react"
-import Typist from "react-typist"
+import React from "react"
 
 import "./LandingScreen.scss"
-import "../styles/typist.css"
+import RoleType from "./RoleType"
 
-export default class Main extends Component {
-  state = {
-    roles: ["Blogger", "Designer", "Web Developer"],
-  }
-
-  render() {
-    return (
-      <>
-        <main>
-          <h1 id="name">
-            <span className="first-name">Jibin</span>
-            <span className="last-name">Thomas</span>
-          </h1>
-          <h2 id="role">
+function Main() {
+  return (
+    <>
+      <main className="main">
+        <h1>
+          <span className="main__first--name">Jibin</span>
+          <span className="main__last--name">Thomas</span>
+          <div className="main__role">
             <span style={{ color: "#A0B3C5" }}>I'm a </span>
-            <Typist startDelay={1000} avgTypingDelay={100}>
-              {this.state.roles[0]}
-              <Typist.Backspace
-                count={this.state.roles[0].length}
-                delay={1000}
-              />
-              {this.state.roles[1]}
-              <Typist.Backspace
-                count={this.state.roles[1].length}
-                delay={1000}
-              />
-              {this.state.roles[2]}
-            </Typist>
-          </h2>
-        </main>
-      </>
-    )
-  }
+            <RoleType />
+          </div>
+        </h1>
+      </main>
+    </>
+  )
 }
+
+export default Main

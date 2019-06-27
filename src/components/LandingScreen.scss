@@ -1,6 +1,6 @@
 @import "../styles/colors";
 
-main {
+.main {
   align-items: center;
   background: $secondary;
   display: flex;
@@ -10,46 +10,46 @@ main {
   align-items: center;
   position: relative;
   text-align: center;
-  //   border-top: 9px solid $primary;
 }
 
-#name {
+.main__first--name {
+  color: $white;
   font-size: 4.5rem;
   margin: 0;
-  .first-name {
-    color: $white;
-  }
-  .last-name {
-    color: $primary-accent;
-  }
 }
 
-#role {
+.main__last--name {
+  color: $primary-accent;
+  font-size: 4.5rem;
+  margin: 0;
+}
+
+.main__role {
   margin: 0;
   font-size: 2rem;
   color: $white;
 }
 
-@media only screen and (max-width: 700px) {
-  #name span {
+@media (max-width: 700px) {
+  .main__first--name {
     display: block;
-  }
-  .first-name {
     transform: translateY(14px);
   }
 
-  .last-name {
+  .main__last--name {
+    display: block;
     transform: translateY(-13px);
     z-index: 1;
   }
 }
 
-@media only screen and (max-width: 440px) {
-  #name {
+@media (max-width: 440px) {
+  .main__first--name,
+  .main__last--name {
     font-size: 4rem;
   }
 
-  #role {
+  .main__role {
     font-size: 1.7rem;
   }
 }
