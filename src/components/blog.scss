@@ -1,0 +1,33 @@
+@import "../styles/colors";
+
+.blog__container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.post {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.date {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: normal;
+  color: $grey;
+  &::before {
+    content: " — ";
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .post {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+  }
+
+  .date::before {
+    display: none;
+  }
+}

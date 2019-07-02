@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:400,600&display=swap");
 @import "colors";
 
-// global
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -11,8 +10,8 @@ html {
 }
 
 body {
-  color: $secondary;
-  background: $white;
+  color: $darker-grey;
+  background: $lightest-grey;
   font-family: "Open Sans", Georgia, serif;
 }
 
@@ -35,20 +34,29 @@ a {
 .btn {
   text-align: center;
   padding: 0.5rem 1rem;
-  border: 2px solid $primary;
-  color: $primary;
+  border: 2px solid $primary-darker;
+  color: $primary-darker;
   text-decoration: none;
   background: transparent;
-  transition: all 0.1s linear;
   border-radius: 3px;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   cursor: pointer;
-  &:hover {
-    color: $white;
-    background: $primary;
-    transition: all 0.1s linear;
-  }
+}
+
+.btn--primary {
+  color: $lightest-grey;
+  background: $primary-darker;
+}
+
+.btn--hover:hover {
+  color: $lightest-grey;
+  background: $primary-darker;
+  transition: all 0.1s linear;
+}
+
+.center {
+  text-align: center;
 }
 
 .hidden {
@@ -59,73 +67,10 @@ a {
   padding: 0;
 }
 
-/* wrapper class */
-.wrapper {
-  max-width: 1100px;
-  margin: auto;
-  padding: 1rem;
-}
-
-.wrapper > section {
-  margin-top: 4rem;
-}
-
-.info {
-  text-align: left;
-  margin: 8px auto;
-  max-width: 800px;
-}
-
-.container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.container > div {
-  display: flex;
-  flex-direction: column;
-}
-
-/* posts */
-.post {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-style: italic;
-  margin-bottom: 2rem;
-}
-.date {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-style: normal;
-  color: $grey;
-  &::before {
-    content: " — ";
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .post {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 3rem;
-  }
-  .date::before {
-    display: none;
-  }
-}
-
-/* mobile */
-@media only screen and (max-width: 700px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .container > div {
-    margin-bottom: 32px;
-    text-align: center;
-  }
-
-  .container h3 {
-    margin-bottom: 16px;
-  }
+#about,
+#skills,
+#work,
+#contact,
+#blog {
+  padding: 3rem 1rem;
 }

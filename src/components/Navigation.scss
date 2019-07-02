@@ -8,7 +8,7 @@
   z-index: 10;
 
   a:hover {
-    color: $white;
+    color: $primary-lighter;
   }
 }
 
@@ -27,7 +27,7 @@
   a {
     padding: 4px 8px;
     margin: 0 8px;
-    color: #a0b3c5;
+    color: $light-grey;
   }
 }
 
@@ -41,7 +41,7 @@
   }
 
   #nav-mobile {
-    background: $secondary;
+    background: $darkest-grey;
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -52,7 +52,7 @@
     transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
     width: 100vw;
     a {
-      color: #a0b3c5;
+      color: $primary-lighter;
       display: block;
       font-size: 1.5rem;
       margin: 0.5rem;
@@ -95,7 +95,7 @@
 }
 
 .hamburger .bar {
-  background-color: $white;
+  background-color: $lightest-grey;
   border-radius: 4px;
 
   display: block;
