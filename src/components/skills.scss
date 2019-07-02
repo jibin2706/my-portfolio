@@ -1,0 +1,32 @@
+.skills {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.skills__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills__list__img {
+  width: 80px;
+  max-height: 100px;
+  height: 100%;
+  filter: saturate(0.2);
+  margin: 2rem;
+  transition: 200ms ease-in;
+}
+
+.skills__list__img:hover,
+.skills__list__img:active {
+  filter: saturate(1);
+}
+
+@media (max-width: 500px) {
+  .skills__list__img {
+    width: 64px;
+    filter: saturate(0.7);
+    margin: 1.5rem;
+  }
+}
