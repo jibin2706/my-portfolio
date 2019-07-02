@@ -1,5 +1,6 @@
 import React from "react"
 import Heading from "./Heading"
+import Tooltip from "./Tootlip"
 import "./skills.scss"
 
 import css from "../images/skills/css-3.svg"
@@ -20,18 +21,18 @@ function Skill() {
     <section id="skills" className="skills">
       <Heading title="Skills" />
       <div className="skills__list">
-        <img className="skills__list__img" alt="html" src={html} />
-        <img className="skills__list__img" alt="css" src={css} />
-        <img className="skills__list__img" alt="javascript" src={javascript} />
-        <img className="skills__list__img" alt="react" src={react} />
-        <img className="skills__list__img" alt="sass" src={sass} />
-        <img className="skills__list__img" alt="git" src={git} />
-        <img className="skills__list__img" alt="bootstrap" src={bootstrap} />
-        <img className="skills__list__img" alt="python" src={python} />
-        <img className="skills__list__img" alt="java" src={java} />
-        <img className="skills__list__img" alt="jquery" src={jquery} />
-        <img className="skills__list__img" alt="vscode" src={vscode} />
-        <img className="skills__list__img" alt="figma" src={figma} />
+        <Tooltip text="HTML" img={html} />
+        <Tooltip text="CSS" img={css} />
+        <Tooltip text="JavaScript" img={javascript} />
+        <Tooltip text="React" img={react} />
+        <Tooltip text="SASS" img={sass} />
+        <Tooltip text="Git" img={git} />
+        <Tooltip text="Bootstrap" img={bootstrap} />
+        <Tooltip text="Python" img={python} />
+        <Tooltip text="Java" img={java} />
+        <Tooltip text="jQuery" img={jquery} />
+        <Tooltip text="VSCode" img={vscode} />
+        <Tooltip text="Figma" img={figma} />
       </div>
     </section>
   )
