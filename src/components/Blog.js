@@ -5,9 +5,18 @@ import "./blog.scss"
 
 function Blog() {
   return (
-    <section id="blog">
+    <section className="blog" id="blog">
       <Heading title="Latest Posts" />
       <div className="blog__container">
+        <p className="post">
+          <a
+            href="https://blog.jibin.tech/nifty-javascript-methods-that-will-make-your-life-easier/"
+            className="link"
+          >
+            Nifty Javascript methods that will make your life easier
+          </a>
+          <span className="date"> 2nd July, 2019</span>
+        </p>
         <p className="post">
           <a
             href="https://blog.jibin.tech/vs-code-extensions-to-make-you-more-productive/"
