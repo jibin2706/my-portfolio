@@ -13,7 +13,7 @@ import "../styles/style.scss"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Jibin Thomas — Front-End Developer and Casual Blogger" description="Jibin Thomas is a Front-End Web developer from Mumbai. You can reach out to him jibin.thomas2706@gmail and he is available of freelance work."/>
+    <SEO title="Jibin Thomas — Front-End Developer and Casual Blogger" description="Jibin Thomas is a Front-End Web developer from Mumbai. You can reach out to him at jibin.thomas2706@gmail.com and he is available for freelance work."/>
     <LandingScreen />
     <About />
     <Skills />
