@@ -13,20 +13,23 @@
   width: 80px;
   max-height: 100px;
   height: 100%;
-  filter: saturate(0.2);
+  filter: grayscale(1);
+  opacity: 0.8;
   margin: 2rem;
-  transition: 200ms ease-in;
+  transition: all 300ms ease;
 }
 
 .skills__list__img:hover,
 .skills__list__img:active {
-  filter: saturate(1);
+  filter: grayscale(0);
+  opacity: 1;
 }
 
 @media (max-width: 500px) {
   .skills__list__img {
     width: 64px;
-    filter: saturate(0.7);
+    filter: grayscale(0);
+    opacity: 1;
     margin: 1.5rem;
   }
 }
