@@ -2,9 +2,14 @@
 
 .footer {
   padding: 3rem 1rem;
-  color: $grey;
+  color: $light-grey;
+  background: $darkest-grey;
   text-align: center;
   font-family: "Open Sans", sans-serif;
+}
+
+.footer a {
+  color: $primary-lighter;
 }
 
 .footer__network {
