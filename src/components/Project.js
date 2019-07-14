@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import Heading from "../components/Heading"
 
 import "./project.scss"
@@ -67,6 +68,11 @@ function Project() {
             <img src={randomquote} alt="random quote generator" />
           </picture>
         </div>
+      </div>
+      <div className="more__projects">
+        <Link to="/projects" className="btn  btn--hover">
+          More projects
+        </Link>
       </div>
     </section>
   )
