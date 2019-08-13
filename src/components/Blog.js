@@ -10,6 +10,12 @@ function Blog() {
       <div className="blog__container">
         <PostTemplate
           title="Using locally hosted fonts on your website"
+          url="https://blog.jibin.tech/nextjs+redux/"
+          date="11th August, 2019"
+        />
+
+        <PostTemplate
+          title="Using locally hosted fonts on your website"
           url="https://blog.jibin.tech/hosting-font-locally-for-your-website/"
           date="7th July, 2019"
         />
