@@ -9,7 +9,7 @@ function Blog() {
       <Heading title="Latest Posts" />
       <div className="blog__container">
         <PostTemplate
-          title="Using locally hosted fonts on your website"
+          title="Next.js + Redux"
           url="https://blog.jibin.tech/nextjs+redux/"
           date="11th August, 2019"
         />
