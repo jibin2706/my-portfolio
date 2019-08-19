@@ -9,10 +9,10 @@ function About() {
       <Heading title="About Me" />
       <div className="about__info">
         <p>
-          I'm a Frontend Web developer, graduated from Mumbai University in a
-          Bachelor of Science in Information Technology. I've been actively
-          involved in web design and android app development. And I have
-          recently started blogging related to programming.
+          Currently, I'm working as a Frontend Web developer at{" "}
+          <a href="https://thesouledstore.com">The Souled Store</a>. Graduated
+          from Mumbai University in a Bachelor of Science in Information
+          Technology.
         </p>
         <p>
           My specialty is in{" "}

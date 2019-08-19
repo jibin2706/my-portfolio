@@ -10,8 +10,6 @@ import react from "../images/skills/react.svg"
 import sass from "../images/skills/sass.svg"
 import html from "../images/skills/html-5.svg"
 import javascript from "../images/skills/javascript.svg"
-import vscode from "../images/skills/visual-studio-code.svg"
-import bootstrap from "../images/skills/bootstrap.svg"
 import java from "../images/skills/java.svg"
 import python from "../images/skills/python.svg"
 import figma from "../images/skills/figma.svg"
@@ -27,11 +25,9 @@ function Skill() {
         <Tooltip text="React" img={react} />
         <Tooltip text="SASS" img={sass} />
         <Tooltip text="Git" img={git} />
-        <Tooltip text="Bootstrap" img={bootstrap} />
         <Tooltip text="Python" img={python} />
         <Tooltip text="Java" img={java} />
         <Tooltip text="jQuery" img={jquery} />
-        <Tooltip text="VSCode" img={vscode} />
         <Tooltip text="Figma" img={figma} />
       </div>
     </section>
