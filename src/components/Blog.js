@@ -9,6 +9,18 @@ function Blog() {
       <Heading title="Latest Posts" />
       <div className="blog__container">
         <PostTemplate
+          title="Different ways to get your react project started"
+          url="https://blog.jibin.tech/ways-to-get-your-react-project-started/"
+          date="12th September, 2019"
+        />
+
+        <PostTemplate
+          title="Difference between forEach and map in javascript"
+          url="https://blog.jibin.tech/difference-between-forEach-and-map-in-javascript/"
+          date="24th August, 2019"
+        />
+
+        <PostTemplate
           title="Next.js + Redux"
           url="https://blog.jibin.tech/nextjs+redux/"
           date="11th August, 2019"
