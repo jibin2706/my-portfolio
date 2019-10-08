@@ -26,13 +26,13 @@ function Header() {
         type="checkbox"
         id="checkbox1"
         className="checkbox1 visuallyHidden"
+        onChange={() => toggleNavbar(!isNavbarVisible)}
       />
       <label
         htmlFor="checkbox1"
         aria-labelledby="checkbox1"
         aria-label="toggle navigation"
         id="hamburger"
-        onClick={() => toggleNavbar(!isNavbarVisible)}
       >
         <div className="hamburger">
           <span className="bar bar1" />
