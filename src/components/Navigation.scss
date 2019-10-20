@@ -48,7 +48,8 @@
     align-items: center;
     position: fixed;
     transform: translateX(-100vw);
-    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    opacity: 0;
+    transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
     width: 100vw;
     a {
       color: $primary-lighter;
@@ -60,8 +61,8 @@
   }
 
   .tap {
+    opacity: 1 !important;
     transform: translateX(0px) !important;
-    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
   }
 }
 
