@@ -9,6 +9,18 @@ function Blog() {
       <Heading title="Latest Posts" />
       <div className="blog__container">
         <PostTemplate
+          title="Destructuring javascript objects into custom variables names and default values"
+          url="https://blog.jibin.tech/destructuring-assignment-of-objects-in-javascipt/"
+          date="19th October, 2019"
+        />
+
+        <PostTemplate
+          title="Getting started with Git - Part 1"
+          url="https://blog.jibin.tech/getting-started-with-git-part-1/"
+          date="21th September, 2019"
+        />
+
+        <PostTemplate
           title="Different ways to get your react project started"
           url="https://blog.jibin.tech/ways-to-get-your-react-project-started/"
           date="12th September, 2019"
