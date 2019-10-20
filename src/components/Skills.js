@@ -12,7 +12,6 @@ import html from "../images/skills/html-5.svg"
 import javascript from "../images/skills/javascript.svg"
 import java from "../images/skills/java.svg"
 import python from "../images/skills/python.svg"
-import figma from "../images/skills/figma.svg"
 
 function Skill() {
   return (
@@ -28,7 +27,6 @@ function Skill() {
         <Tooltip text="Python" img={python} />
         <Tooltip text="Java" img={java} />
         <Tooltip text="jQuery" img={jquery} />
-        <Tooltip text="Figma" img={figma} />
       </div>
     </section>
   )
